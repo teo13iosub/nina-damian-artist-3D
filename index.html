@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="assets/animatecss/animate.css">
     <link rel="stylesheet" href="assets/dropdown/css/style.css">
     <link rel="stylesheet" href="assets/socicon/css/styles.css">
     <link rel="stylesheet" href="assets/theme/css/style.css">
@@ -30,11 +29,14 @@
 
     <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=WYCb2h">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=WYCb2h" type="text/css">
-<!-- nu merge schimbat fontul -->
+    <!-- ca sa schimb fontul am pus si regula pt clasele display ca sa suprascrie -->
+    <!-- footer alb spațiu dedesubt - ? overflow - remediat cu box sizing border box-->
     <style>
         body {
             font-family: 'Open Sans', sans-serif;
+            margin: 0;
         }
+
         .bold {
             font-weight: 600;
         }
@@ -42,9 +44,25 @@
         .italic {
             font-style: italic;
         }
-        .display-1, .display-2, .display-3, .display-4, .display-5, .display-6, .display-7, .display-8
-        {
+
+        .display-1,
+        .display-2,
+        .display-3,
+        .display-4,
+        .display-5,
+        .display-6,
+        .display-7,
+        .display-8 {
             font-family: 'Open Sans', sans-serif;
+        }
+
+        .footer3 {
+            margin: 0;
+            height: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
         }
     </style>
 
@@ -60,19 +78,16 @@
                             <img src="logo.png" alt="logo" style="height: 3.4rem;">
                         </a>
                     </span>
-                    <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-5"
-                            href="index.html">Nina Damian</a></span>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse"
                     data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="hamburger">
-                        <!-- dacă șterg astea nu mai merge??Element div not allowed as child of element button in this context. -->
+                    <span class="hamburger">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
-                    </div>
+                    </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
@@ -110,7 +125,7 @@
                             </p>
                             <p class="mbr-text mbr-fonts-style display-4">Am colaborat cu diverse branduri din industria
                                 designului și
-                                arteidigitale, de la agenții de publicitate la studiouri de jocuri.
+                                artei digitale, de la agenții de publicitate la studiouri de jocuri.
                                 Experiențele mele includ crearea de modele și personaje 3D complexe, animație și design
                                 industrial. Fiecare colaborare mi-a oferit
                                 oportunitatea de a transforma idei în creații vizuale care inspiră și transmit mesaje
@@ -607,6 +622,9 @@
             </div>
         </div>
     </section>
+    <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i
+                class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+    <input name="animation" type="hidden">
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/smoothscroll/smooth-scroll.js"></script>
     <script src="assets/ytplayer/index.js"></script>
@@ -615,9 +633,7 @@
     <script src="assets/embla/script.js"></script>
     <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>
     <script src="assets/theme/js/script.js"></script>
-    <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i
-                class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
-    <input name="animation" type="hidden">
+
 </body>
 
 </html>

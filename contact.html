@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="assets/parallax/jarallax.css">
-    <link rel="stylesheet" href="assets/animatecss/animate.css">
     <link rel="stylesheet" href="assets/dropdown/css/style.css">
     <link rel="stylesheet" href="assets/socicon/css/styles.css">
     <link rel="stylesheet" href="assets/theme/css/style.css">
@@ -33,8 +32,10 @@
 
     <style>
         body {
-            font-family: 'Open Sans', sans-serif; 
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
         }
+
         .bold {
             font-weight: 600;
         }
@@ -42,9 +43,25 @@
         .italic {
             font-style: italic;
         }
-        .display-1, .display-2, .display-3, .display-4, .display-5, .display-6, .display-7, .display-8
-        {
+
+        .display-1,
+        .display-2,
+        .display-3,
+        .display-4,
+        .display-5,
+        .display-6,
+        .display-7,
+        .display-8 {
             font-family: 'Open Sans', sans-serif;
+        }
+
+        .footer3 {
+            margin: 0;
+            height: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
         }
     </style>
 
@@ -61,19 +78,16 @@
                             <img src="logo.png" alt="logo" style="height: 3.4rem;">
                         </a>
                     </span>
-                    <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-5"
-                            href="index.html">Nina Damian</a></span>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse"
                     data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="hamburger">
-                        <!-- dacă șterg astea nu mai merge?? am inlocuit div cu span mai sus NU REZOLVA. STAU RAU -->
+                    <span class="hamburger">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
-                    </div>
+                    </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
